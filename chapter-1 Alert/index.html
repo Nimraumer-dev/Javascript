@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Introduction to JavaScript — Assignment</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Simple professional introduction to JavaScript with light/dark theme toggle and saved preference.">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --card: #f6f7fb;
+            --text: #0f1724;
+            --muted: #475569;
+            --accent: #2563eb;
+            --glass: rgba(15, 23, 36, 0.04);
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        /* Layout */
+        .container {
+            max-width: 980px;
+            margin: 48px auto;
+            padding: 24px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px
+        }
+
+        .logo {
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #0ea5e9);
+            color: white
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.6rem
+        }
+
+        p.para {
+            margin: 8px 0 0;
+            color: var(--muted)
+        }
+
+        /* Card */
+        .card {
+            background: var(--card);
+            border-radius: 14px;
+            padding: 22px;
+            margin-top: 22px;
+            box-shadow: 0 6px 18px rgba(8, 15, 30, 0.06);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 320px;
+            gap: 20px
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 14px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--accent), #0ea5e9);
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            box-shadow: 0 6px 14px rgba(37, 99, 235, 0.12)
+        }
+
+        .btn.ghost {
+            background: transparent;
+            color: var(--accent);
+            box-shadow: none;
+            border: 1px solid rgba(37, 99, 235, 0.12)
+        }
+
+        /* Content styling */
+        h2 {
+            margin-top: 0
+        }
+
+        ul {
+            padding-left: 1.1rem
+        }
+
+        code {
+            background: rgba(0, 0, 0, 0.04);
+            padding: 3px 6px;
+            border-radius: 6px;
+            font-family: monospace
+        }
+
+        footer {
+            margin-top: 28px;
+            color: var(--muted);
+            font-size: 0.88rem
+        }
+
+        /* Responsive */
+        @media (max-width:880px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+
+            .logo {
+                width: 44px;
+                height: 44px
+            }
+
+            header{
+                flex-direction: column;
+            }
+
+            .logo {
+            width: 117px;
+            height: 52px;
+            border-radius: 10px;
+            display: flex;   
+            text-align: center;
+            align-self: center;
+            font-weight: 700;  
+            padding-left: 13px;   
+            margin-bottom: 83px;            
+            background: linear-gradient(135deg, var(--accent), #0ea5e9);
+            color: white
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="app">
+        <header>
+            <div class="brand">
+                <div class="logo">JS</div>
+                <div>
+                    <h1>Introduction to JavaScript</h1>
+                    <p class="para">A short professional overview for your assignment — with saved light/dark
+                        preference.</p>
+                </div>
+            </div>
+
+            <div style="display:flex;align-items:center;gap:12px">
+                <nav>
+                    <a class="btn ghost" href="#content">Skip to content</a>
+                </nav>
+            </div>
+        </header>
+
+        <main id="content" class="card">
+            <div class="grid">
+                <!-- Main content -->
+                <section>
+                    <h2>What is JavaScript?</h2>
+                    <p>
+                        <strong>JavaScript</strong> is a high-level programming language that runs in web browsers and
+                        on servers (via Node.js). It enables interactive behavior on websites — for example responding
+                        to user actions, updating content dynamically, validating forms, and communicating with servers.
+                    </p>
+
+                    <h3>Where JavaScript runs</h3>
+                    <ul>
+                        <li>In a <em>browser</em> (Chrome, Firefox, Safari, Edge).</li>
+                        <li>On a <em>server</em> using runtimes like Node.js.</li>
+                        <li>In other environments (desktop apps, mobile apps, and more).</li>
+                    </ul>
+
+                    <h3>Why we use JavaScript</h3>
+                    <p>
+                        JavaScript brings web pages to life — it lets developers modify the page structure (DOM), handle
+                        events (clicks, typing), perform calculations, and talk to servers (AJAX / fetch). Modern web
+                        development uses JavaScript for both frontend and backend work.
+                    </p>
+
+                    <h3>How to include JavaScript</h3>
+                    <p>
+                        JavaScript is placed inside <code>&lt;script&gt;</code> tags. Scripts can be placed inside the
+                        <strong>&lt;head&gt;</strong> or anywhere inside <strong>&lt;body&gt;</strong>. Placing scripts
+                        at the end of <code>body</code> is common to ensure the page content loads first.
+                    </p>
+
+                    <h3>Simple example (non-alert)</h3>
+                    <p>
+                        You can run a quick console message to verify JavaScript is active in the page. Open the browser
+                        DevTools (Inspect → Console) and you will see the message produced by
+                        <code>console.log()</code>.
+                    </p>
+
+                    <div style="margin-top:14px">
+                        <!-- Button navigates to alerts page (assignment) -->
+                        <a class="btn" href="alert.js">View Alert Examples & Assignment</a>
+                    </div>
+                </section>
+
+                <!-- Sidebar / Notes -->
+                <aside>
+                    <h3>Assignment Tips</h3>
+                    <ul>
+                        <li>Save a copy of both files (<code>index.html</code> and <code>alerts.html</code>) in your
+                            project folder.</li>
+                        <li>Create a GitHub repository and upload the files (no zip).</li>
+                        <li>Write clear comments in your code — this helps your teacher understand your logic.</li>
+                        <li>Test the alert page in the browser and open the console for the console example.</li>
+                    </ul>
+
+                    <h3 style="margin-top:12px">What I included</h3>
+                    <ul>
+                        <li>Light/Dark toggle with preference saved in <code>localStorage</code>.</li>
+                        <li>Accessible button to go to assignment page.</li>
+                        <li>Professional layout and small responsive behaviour for mobile.</li>
+                    </ul>
+                </aside>
+            </div>
+
+            <footer>
+                <p>Built for assignment — <em>clean, commented & saved theme preference</em>.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="alert.js"></script>
+</body>
+
+</html>
