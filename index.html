@@ -68,10 +68,6 @@
             font-size: 1.6rem
         }
 
-        p.para {
-            margin: 8px 0 0;
-            color: var(--muted)
-        }
 
         /* Card */
         .card {
@@ -126,7 +122,7 @@
         footer {
             margin-top: 28px;
             color: var(--muted);
-            font-size: 0.88rem
+            font-size: 0.88rem;
         }
 
         /* Responsive */
@@ -145,17 +141,7 @@
             }
 
             .logo {
-            width: 117px;
-            height: 52px;
-            border-radius: 10px;
-            display: flex;   
-            text-align: center;
-            align-self: center;
-            font-weight: 700;  
-            padding-left: 13px;   
-            margin-bottom: 83px;            
-            background: linear-gradient(135deg, var(--accent), #0ea5e9);
-            color: white
+            padding-inline: 12px;   
         }
         }
     </style>
@@ -168,8 +154,6 @@
                 <div class="logo">JS</div>
                 <div>
                     <h1>Introduction to JavaScript</h1>
-                    <p class="para">A short professional overview for your assignment — with saved light/dark
-                        preference.</p>
                 </div>
             </div>
 
@@ -182,7 +166,6 @@
 
         <main id="content" class="card">
             <div class="grid">
-                <!-- Main content -->
                 <section>
                     <h2>What is JavaScript?</h2>
                     <p>
@@ -224,25 +207,6 @@
                         <a class="btn" href="chapter-1 Alert/alert.js">View Alert Examples & Assignment</a>
                     </div>
                 </section>
-
-                <!-- Sidebar / Notes -->
-                <aside>
-                    <h3>Assignment Tips</h3>
-                    <ul>
-                        <li>Save a copy of both files (<code>index.html</code> and <code>alerts.html</code>) in your
-                            project folder.</li>
-                        <li>Create a GitHub repository and upload the files (no zip).</li>
-                        <li>Write clear comments in your code — this helps your teacher understand your logic.</li>
-                        <li>Test the alert page in the browser and open the console for the console example.</li>
-                    </ul>
-
-                    <h3 style="margin-top:12px">What I included</h3>
-                    <ul>
-                        <li>Light/Dark toggle with preference saved in <code>localStorage</code>.</li>
-                        <li>Accessible button to go to assignment page.</li>
-                        <li>Professional layout and small responsive behaviour for mobile.</li>
-                    </ul>
-                </aside>
             </div>
 
             <footer>
@@ -251,7 +215,7 @@
         </main>
     </div>
 
-    <script src="alert.js"></script>
+    <script src="chapter-1 Alert/alert.js"></script>
 </body>
 
 </html>
