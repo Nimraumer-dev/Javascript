@@ -1,6 +1,6 @@
 //1 
 
-/*let studentNames = [];
+let studentNames = [];
 
 //2
 
@@ -119,17 +119,17 @@ document.write( "<strong>Array:</strong>" + "<br>" + arr )
 //13
 
 
-let devices = [];
+let device = [];
 
-devices.push("keyboard", "mouse", "printer", "monitor");
+device.push("keyboard", "mouse", "printer", "monitor");
 
 
-document.write("Devices: " +"<br>" + devices + "<br><br>");
+document.write("Devices: " +"<br>" + device + "<br><br>");
 
-document.write("<strong>Out</strong>: " + "<br>" + devices.shift() + "<br>");
-document.write("<strong>Out</strong>: " + "<br>" + devices.shift() + "<br>");
-document.write("<strong>Out</strong>: " + "<br>" + devices.shift() + "<br>");
-document.write("<strong>Out</strong>: " + "<br>" + devices.shift() + "<br>");
+document.write("<strong>Out</strong>: " + "<br>" + device.shift() + "<br>");
+document.write("<strong>Out</strong>: " + "<br>" + device.shift() + "<br>");
+document.write("<strong>Out</strong>: " + "<br>" + device.shift() + "<br>");
+document.write("<strong>Out</strong>: " + "<br>" + device.shift() + "<br>");
 
 
 //14
@@ -144,7 +144,7 @@ document.write("Devices: " + "<br>" + devices + "<br><br>");
 document.write("<strong>Out</strong>: " + "<br>" + devices.pop() + "<br>");
 document.write("<strong>Out</strong>: " + "<br>" + devices.pop() + "<br>");
 document.write("<strong>Out</strong>: " + "<br>" + devices.pop() + "<br>");
-document.write("<strong>Out</strong>: " + "<br>" + devices.pop() + "<br>");*/
+document.write("<strong>Out</strong>: " + "<br>" + devices.pop() + "<br>");
 
 
 //15
