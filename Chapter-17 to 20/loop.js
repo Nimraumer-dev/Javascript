@@ -1,6 +1,6 @@
 //1
 
-let multiArray = [ [] ];
+let multiArray = [[]];
 
 
 //2
@@ -122,12 +122,12 @@ let array_two = [24, 53, 78, 91, 12];
 let smallest_number = array_two[0];
 
 for (let i = 1; i < array_two.length; i++) {
-    if (array_two[i] < smallest_number ) {
-        smallest_number = array_two[i];  
+    if (array_two[i] < smallest_number) {
+        smallest_number = array_two[i];
     }
 }
 
-document.write( "Array items:" + array_two + "<br>" + "Smallest number in the array is: " + smallest_number );
+document.write("Array items:" + array_two + "<br>" + "Smallest number in the array is: " + smallest_number);
 
 
 
@@ -147,3 +147,4 @@ for (var i = 1; i <= 100; i++) {
 
 
 
+  
