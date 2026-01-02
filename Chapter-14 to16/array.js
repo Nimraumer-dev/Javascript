@@ -34,7 +34,7 @@ document.write("<h1>Qualifications</h1>")
 
 for (let i = 0; i < qualification.length; i++) {
 
-    document.write( ( i + 1)+ ") " + qualification[i] + "<br>");
+    document.write( ( i + 1)+ ") " + qualification[i] + "<b                                                                                                                                                                                                                                                                                 ``ccr>");
     }
 
 
