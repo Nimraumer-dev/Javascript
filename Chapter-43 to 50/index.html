@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<body>
+
+
+    <!-- Q1 -->
+    <a href="#" onclick="showAlert()">Click Me</a>
+
+    <!-- Q2 -->
+    <h3>Click on any mobile</h3>
+
+    <img src="../Chapter-43 to 50/img/mob1.jpeg" width="150" onclick="showMessage()">
+    <img src="../Chapter-43 to 50/img/mob2.jpeg" width="150" onclick="showMessage()">
+    <img src="../Chapter-43 to 50/img/mob3.jpeg" width="150" onclick="showMessage()">
+
+
+    <!-- Q3 -->
+
+
+    <h3>Student Records</h3>
+
+    <table style="border: 1;">
+        <th>Index </th>
+        <th>Names </th>
+        <th>Class </th>
+        <tr id="row1">
+            <td>0</td>
+            <td>Jhone</td>
+            <td>10</td>
+            <td><button onclick="deleteRow1()">Delete</button></td>
+        </tr>
+
+        <tr id="row2">
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="deleteRow2()">Delete</button></td>
+        </tr>
+        <tr id="row3">
+            <td>2</td>
+            <td>Mark</td>
+            <td>8</td>
+            <td><button onclick="deleteRow3()">Delete</button></td>
+        </tr>
+        <tr id="row4">
+            <td>3</td>
+            <td>Jenny</td>
+            <td>9</td>
+            <td><button onclick="deleteRow4()">Delete</button></td>
+        </tr>
+        <tr id="row5">
+            <td>4</td>
+            <td>james</td>
+            <td>10</td>
+            <td><button onclick="deleteRow5()">Delete</button></td>
+        </tr>
+        <tr id="row6">
+            <td>5</td>
+            <td>Olivia</td>
+            <td>7</td>
+            <td><button onclick="deleteRow6()">Delete</button></td>
+        </tr>
+    </table>
+
+
+
+    <!-- Q4 -->
+
+    <img src="../Chapter-43 to 50/img/mob1.jpeg" width="200" onmouseover="this.src='../Chapter-43 to 50/img/mob2.jpeg'"
+        onmouseover="this.src='../Chapter-43 to 50/img/mob1.jpeg'"
+        onmouseout="this.src='../Chapter-43 to 50/img/mob3.jpeg'">
+
+
+
+    <!-- Q5 -->
+
+    <h2>Counter</h2>
+    <h3 id="count">0</h3>
+
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+
+
+    <script src="events.js"></script>
+</body>
+
+</html>

@@ -31,7 +31,7 @@ document.write("Ceil value: " + Math.ceil(num));
 var num = prompt("Enter a number:");
 num = Number(num);
 
-document.write("The absolute value of " + num + " is " + Math.abs(num));
+document.write("The absolute value of " +  num + " is " + Math.abs(num));
 
 
 //4
